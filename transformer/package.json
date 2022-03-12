@@ -1,0 +1,13 @@
+{
+  "name": "@nartallax/qubie-transformer",
+  "version": "1.0.0",
+  "description": "Complementary Typescript transformer for @nartallax/qubie package.",
+  "main": "qubie_transformer.js",
+  "repository": {
+    "type": "git",
+    "url": "github:nartallax/qubie"
+  },
+  "files": [],
+  "author": "Nartallax",
+  "license": "0BSD"
+}

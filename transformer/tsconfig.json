@@ -1,0 +1,29 @@
+{ 
+    "imploderConfig": {
+        "target": "es2018",
+        "moduleBlacklistRegexp": ["test_project"],
+        "profiles": {
+            "release": {
+                "entryModule": "ts/transformer_main.ts",
+                "outFile": "target/qubie_transformer.js"
+            }
+        }
+    },
+	
+	"extends": "../tsconfig.json",
+
+    "include": [
+        "./ts/**/*"
+    ],
+
+    "compilerOptions": {
+        "outDir": "js",
+        "rootDir": "./ts/",
+        "baseUrl": "./ts/",
+        "paths": {
+            "*": [
+                "./*",
+            ]
+        }
+    }
+}

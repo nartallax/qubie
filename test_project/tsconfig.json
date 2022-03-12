@@ -1,0 +1,25 @@
+{ 
+    "imploderConfig": {
+        "target": "es2018",
+        "entryModule": "ts/test_project_main.ts",
+        "entryFunction": "main",
+        "outFile": "js/test_project.js"
+    },
+	
+	"extends": "../tsconfig.json",
+
+    "include": [
+        "./ts/**/*"
+    ],
+
+    "compilerOptions": {
+        "outDir": "js",
+        "rootDir": "./ts/",
+        "baseUrl": "./ts/",
+        "paths": {
+            "*": [
+                "./*",
+            ]
+        }
+    }
+}

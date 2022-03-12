@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "description": "A project to test capabilities of Qubie components",
+  "main": "test_project.js",
+  "author": "Nartallax",
+  "license": "0BSD",
+  "dependencies": {
+    "@nartallax/qubie-transformer": "file:../transformer/target/package.tgz"
+  }
+}
