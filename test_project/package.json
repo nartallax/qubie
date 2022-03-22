@@ -5,6 +5,12 @@
   "author": "Nartallax",
   "license": "0BSD",
   "dependencies": {
-    "@nartallax/qubie-transformer": "file:../transformer/target/package.tgz"
+    "@nartallax/qubie": "file:../core/target/package.tgz",
+    "@nartallax/qubie-pg": "file:../pg/target/package.tgz",
+    "@nartallax/qubie-transformer": "file:../transformer/target/package.tgz",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.6.5"
   }
 }

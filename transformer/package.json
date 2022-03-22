@@ -9,5 +9,9 @@
   },
   "files": [],
   "author": "Nartallax",
-  "license": "0BSD"
+  "license": "0BSD",
+  "dependencies": {
+    "@nartallax/qubie": "file:../core/target/package.tgz",
+    "@nartallax/toolbox-transformer": "^1.0.19"
+  }
 }

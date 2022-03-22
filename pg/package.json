@@ -1,0 +1,25 @@
+{
+  "name": "@nartallax/qubie-pg",
+  "version": "1.0.0",
+  "description": "Add-on for @nartallax/qubie that provides PostgreSQL capacities.",
+  "main": "qubie_pg.js",
+  "types": "qubie_pg.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "github:nartallax/qubie"
+  },
+  "files": [
+    "qubie_pg.d.ts"
+  ],
+  "author": "Nartallax",
+  "license": "0BSD",
+  "dependencies": {
+    "@nartallax/qubie": "file:../core/target/package.tgz",
+    "pg": "^8.7.3",
+    "pg-pool": "^3.5.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.6.5",
+    "@types/pg-pool": "^2.0.3"
+  }
+}

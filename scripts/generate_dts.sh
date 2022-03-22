@@ -6,8 +6,12 @@ cd ..
 PROJECT_NAME="$1"
 
 ENTRYPOINT_FILE="${PROJECT_NAME}/ts/${PROJECT_NAME}_main.ts"
-DTS_FILE="${PROJECT_NAME}/target/qubie_${PROJECT_NAME}.d.ts"
 TSCONFIG_FILE="${PROJECT_NAME}/tsconfig.json"
+
+DTS_FILE="${PROJECT_NAME}/target/qubie_${PROJECT_NAME}.d.ts"
+if [ "${PROJECT_NAME}" = "core" ]; then
+  DTS_FILE="${PROJECT_NAME}/target/qubie.d.ts"
+fi
 
 
 TMP_TSCONFIG_FILE="$TSCONFIG_FILE.tmp.json"

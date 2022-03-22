@@ -1,0 +1,14 @@
+{
+  "name": "@nartallax/qubie",
+  "version": "1.0.0",
+  "description": "LINQ-like way of querying database for Typescript.",
+  "main": "qubie.js",
+  "types": "qubie.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "github:nartallax/qubie"
+  },
+  "files": ["qubie.d.ts"],
+  "author": "Nartallax",
+  "license": "0BSD"
+}

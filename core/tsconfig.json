@@ -1,10 +1,13 @@
 { 
     "imploderConfig": {
         "target": "es2018",
-        "entryModule": "ts/test_project_main.ts",
-        "entryFunction": "main",
-        "outFile": "js/test_project.js",
-        "preventModuleTreePruning": true
+        "moduleBlacklistRegexp": ["test_project"],
+        "profiles": {
+            "release": {
+                "entryModule": "ts/core_main.ts",
+                "outFile": "target/qubie.js"
+            }
+        }
     },
 	
 	"extends": "../tsconfig.json",
@@ -14,11 +17,6 @@
     ],
 
     "compilerOptions": {
-        "plugins": [{
-            "transform": "@nartallax/qubie-transformer", 
-            "type":"program"
-        }],
-
         "outDir": "js",
         "rootDir": "./ts/",
         "baseUrl": "./ts/",
